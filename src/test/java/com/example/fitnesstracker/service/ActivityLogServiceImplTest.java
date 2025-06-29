@@ -1,21 +1,22 @@
 package com.example.fitnesstracker.service;
 
+import com.example.fitnesstracker.exception.ResourceNotFoundException;
 import com.example.fitnesstracker.mapper.ActivityLogMapper;
 import com.example.fitnesstracker.model.ActivityLog;
 import com.example.fitnesstracker.model.User;
 import com.example.fitnesstracker.repository.ActivityLogRepository;
-import com.example.fitnesstracker.exception.ResourceNotFoundException;
-
 import com.example.fitnesstracker.request.ActivityLogRequest;
 import com.example.fitnesstracker.service.impl.ActivityLogServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.*;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;

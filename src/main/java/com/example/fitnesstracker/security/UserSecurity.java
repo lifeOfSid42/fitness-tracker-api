@@ -3,9 +3,6 @@ package com.example.fitnesstracker.security;
 import com.example.fitnesstracker.model.User;
 import com.example.fitnesstracker.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 @Component
